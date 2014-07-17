@@ -13,6 +13,7 @@ import com.zhuani21.pbase.service.UserService;
 
 public class BaseAction<T> extends ActionSupport implements ModelDriven<T> {
 
+	private static final long serialVersionUID = -6754763091004471626L;
 	// ===================== 声明Service ====================
 	@Resource
 	protected RoleService roleService;
@@ -27,6 +28,7 @@ public class BaseAction<T> extends ActionSupport implements ModelDriven<T> {
 
 	protected T model;
 
+	@SuppressWarnings("unchecked")
 	public BaseAction() {
 		System.out.println("----------> BaseAction.BaseAction()");
 		try {

@@ -9,6 +9,7 @@ import com.opensymphony.xwork2.ActionSupport;
 @Controller
 public class TestAction extends ActionSupport {
 
+	private static final long serialVersionUID = 3835012252725516187L;
 	@Resource
 	private TestService testService;
 

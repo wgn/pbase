@@ -11,6 +11,8 @@ import java.util.Set;
  * 
  */
 public class Department  implements java.io.Serializable {
+
+	private static final long serialVersionUID = -2504161921633209050L;
 	private Long id;
 	private Set<User> users = new HashSet<User>();
 	private Department parent;

@@ -1,7 +1,6 @@
 package com.zhuani21.pbase.base;
 
 import java.lang.reflect.ParameterizedType;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 

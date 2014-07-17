@@ -13,6 +13,7 @@ import com.opensymphony.xwork2.ActionContext;
  * 
  */
 public class User implements java.io.Serializable {
+	private static final long serialVersionUID = 3989064920077777173L;
 	private Long id;
 	private Department department;
 	private Set<Role> roles = new HashSet<Role>();
@@ -55,6 +56,7 @@ public class User implements java.io.Serializable {
 	 *            权限的URL
 	 * @return
 	 */
+	@SuppressWarnings("unchecked")
 	public boolean hasPrivilegeByUrl(String privUrl) {
 		// 如果是超级管理员，就有所有的权限
 		if (isAdmin()) {

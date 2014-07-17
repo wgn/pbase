@@ -7,6 +7,8 @@ import com.opensymphony.xwork2.ActionSupport;
 @Controller
 public class HomeAction extends ActionSupport {
 
+	private static final long serialVersionUID = 7511072344417163036L;
+
 	public String index() throws Exception {
 		return "index";
 	}

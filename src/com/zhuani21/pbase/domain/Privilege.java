@@ -11,6 +11,7 @@ import java.util.Set;
  * 
  */
 public class Privilege implements java.io.Serializable {
+	private static final long serialVersionUID = 8100611771983266466L;
 	private Long id;
 	private String url;
 	private String name;

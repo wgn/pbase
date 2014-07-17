@@ -14,6 +14,7 @@ import com.zhuani21.pbase.util.DepartmentUtils;
 @Scope("prototype")
 public class DepartmentAction extends BaseAction<Department> {
 
+	private static final long serialVersionUID = -2403622594537016015L;
 	private Long parentId;
 
 	/**

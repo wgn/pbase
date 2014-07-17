@@ -46,6 +46,7 @@ public class TreeViewPractice {
 
 	// 方式一：
 	// 显示一颗树的信息
+	@SuppressWarnings("unused")
 	private void showTreeInfo(Department top) {
 		// 顶点
 		System.out.println(top.getName());

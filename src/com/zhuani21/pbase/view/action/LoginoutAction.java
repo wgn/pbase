@@ -11,6 +11,8 @@ import com.zhuani21.pbase.domain.User;
 @Scope("prototype")
 public class LoginoutAction extends BaseAction<User> {
 
+	private static final long serialVersionUID = -1984161148655287704L;
+
 	/** 登录页面 */
 	public String loginUI() throws Exception {
 		return "loginUI";

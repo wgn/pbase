@@ -1,12 +1,9 @@
 package com.zhuani21.pbase.test;
 
-import java.util.Properties;
-
 import javax.annotation.Resource;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.omg.PortableServer.POA;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

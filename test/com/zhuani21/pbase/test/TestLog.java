@@ -23,6 +23,8 @@ public class TestLog {
 		log.fatal("这是fatal级别"); // 严重错误
 		
 		ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
+		
+		System.out.println(ac);
 	}
 
 }

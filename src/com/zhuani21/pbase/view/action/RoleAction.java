@@ -15,6 +15,7 @@ import com.zhuani21.pbase.domain.Role;
 @Scope("prototype")
 public class RoleAction extends BaseAction<Role> {
 
+	private static final long serialVersionUID = -1299684778449958664L;
 	private Long[] privilegeIds;
 
 	/** 列表 */

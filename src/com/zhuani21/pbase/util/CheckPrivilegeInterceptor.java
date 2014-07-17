@@ -7,6 +7,8 @@ import com.zhuani21.pbase.domain.User;
 
 public class CheckPrivilegeInterceptor extends AbstractInterceptor {
 
+	private static final long serialVersionUID = 2685779275392962269L;
+
 	public String intercept(ActionInvocation invocation) throws Exception {
 		// System.out.println("============> 拦截器（前）  <============");
 		// String result = invocation.invoke(); // 放行
