@@ -53,17 +53,15 @@ public class Installer {
 		session.save(menu2);
 		session.save(menu3);
 
-		session.save(new Privilege("岗位列表", "/role_list", menu1));
 		session.save(new Privilege("岗位删除", "/role_delete", menu1));
 		session.save(new Privilege("岗位添加", "/role_add", menu1));
 		session.save(new Privilege("岗位修改", "/role_edit", menu1));
+		session.save(new Privilege("设置权限", "/role_setPrivilege", menu1));
 
-		session.save(new Privilege("部门列表", "/department_list", menu2));
 		session.save(new Privilege("部门删除", "/department_delete", menu2));
 		session.save(new Privilege("部门添加", "/department_add", menu2));
 		session.save(new Privilege("部门修改", "/department_edit", menu2));
 
-		session.save(new Privilege("用户列表", "/user_list", menu3));
 		session.save(new Privilege("用户删除", "/user_delete", menu3));
 		session.save(new Privilege("用户添加", "/user_add", menu3));
 		session.save(new Privilege("用户修改", "/user_edit", menu3));
