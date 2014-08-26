@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Top</title>
-    <%@ include file="/WEB-INF/jsp/public/header.jspf" %>
+    <%@ include file="/WEB-INF/jsp/public/resource.jspf" %>
 	<link type="text/css" rel="stylesheet" href="style/blue/top.css" />
 </head>
 

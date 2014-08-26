@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>岗位设置</title>
-	<%@ include file="/WEB-INF/jsp/public/header.jspf" %>
+	<%@ include file="/WEB-INF/jsp/public/resource.jspf" %>
 </head>
 <body> 
 

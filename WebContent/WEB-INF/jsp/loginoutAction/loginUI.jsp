@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv=Content-Type content="text/html; charset=gbk" />
 	<title>OA</title>
-	<%@ include file="/WEB-INF/jsp/public/header.jspf" %>
+	<%@ include file="/WEB-INF/jsp/public/resource.jspf" %>
 	<link href="${pageContext.request.contextPath}/style/blue/login.css" type=text/css rel=stylesheet />
 	<script type="text/javascript">
 		if( window.parent != window ){

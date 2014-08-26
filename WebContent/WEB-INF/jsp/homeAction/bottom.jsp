@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Bottom</title>
-    <%@ include file="/WEB-INF/jsp/public/header.jspf" %>
+    <%@ include file="/WEB-INF/jsp/public/resource.jspf" %>
 	<link type="text/css" rel="stylesheet" href="style/blue/statusbar.css" />
 </head>
 <body style="margin:0"> 

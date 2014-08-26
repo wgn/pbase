@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>配置权限</title>
-    <%@ include file="/WEB-INF/jsp/public/header.jspf" %>
+    <%@ include file="/WEB-INF/jsp/public/resource.jspf" %>
 	<script language="javascript" src="${pageContext.request.contextPath}/script/jquery_treeview/jquery.treeview.js"></script>
 	<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/style/blue/file.css" />
 	<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/script/jquery_treeview/jquery.treeview.css" />

@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
     <TITLE>没有权限</TITLE>
-    <%@ include file="/WEB-INF/jsp/public/header.jspf" %>
+    <%@ include file="/WEB-INF/jsp/public/resource.jspf" %>
 </HEAD>
 <BODY>
 

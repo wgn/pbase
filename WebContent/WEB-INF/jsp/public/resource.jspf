@@ -2,11 +2,20 @@
 <%@ taglib prefix="s" uri="/struts-tags" %>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 <script language="javascript" src="${pageContext.request.contextPath}/script/jquery.js"></script>
 <script language="javascript" src="${pageContext.request.contextPath}/script/pageCommon.js" charset="utf-8"></script>
 <script language="javascript" src="${pageContext.request.contextPath}/script/PageUtils.js" charset="utf-8"></script>
 <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/style/blue/pageCommon.css" />
-
+<%--tablesorter --%>
+	<!-- choose a theme file -->
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/script/tablesorter/css/theme.default.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/script/tablesorter/css/theme.blue.css">
+	<!-- load jQuery and tablesorter scripts -->
+	<script type="text/javascript" src="${pageContext.request.contextPath}/script/tablesorter/js/jquery.tablesorter.min.js"></script>
+	<!-- tablesorter widgets (optional) -->
+	<script type="text/javascript" src="${pageContext.request.contextPath}/script/tablesorter/js/jquery.tablesorter.widgets.min.js"></script>
+<%----------------%>
 <script type="text/javascript">
 </script>
 

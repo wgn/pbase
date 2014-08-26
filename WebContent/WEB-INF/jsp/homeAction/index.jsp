@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>OA</title>
-		<%@ include file="/WEB-INF/jsp/public/header.jspf" %>
+		<%@ include file="/WEB-INF/jsp/public/resource.jspf" %>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	</head>
 	<frameset rows="100,*,25" framespacing="0" border="0" frameborder="0">
