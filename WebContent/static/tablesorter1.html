@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<!-- choose a theme file -->
+	<script language="javascript" src="../script/jquery.js"></script>
+
+	<link rel="stylesheet" href="../script/tablesorter/css/theme.default.css">
+	<link rel="stylesheet" href="../script/tablesorter/css/theme.blue.css">
+	<link rel="stylesheet" href="../script/tablesorter/css/theme.dropbox.css">
+	<!-- load jQuery and tablesorter scripts -->
+	<script type="text/javascript" src="../script/tablesorter/js/jquery.tablesorter.min.js"></script>
+	<!-- tablesorter widgets (optional) -->
+	<script type="text/javascript" src="../script/tablesorter/js/jquery.tablesorter.widgets.min.js"></script>
+
+<script type="text/javascript">
+	$(function() {
+		
+		$(".table1").tablesorter({
+			sortList : [[2,0]],
+			theme : 'dropbox'
+		});
+		
+		$(".table2").tablesorter({
+			theme : 'blue'
+		});
+	});
+</script>
+</head>
+<body>
+	<!-- this data-sortlist method requires jQuery v1.4+ -->
+	<table class="table1" data-sortlist="[[0,0],[2,0]]">
+		<thead>
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Age</th>
+				<th>Total</th>
+				<th>Discount</th>
+				<th>Date</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Peter</td>
+				<td>Parker</td>
+				<td>28</td>
+				<td>$9.99</td>
+				<td>20%</td>
+				<td>Jul 6, 2006 8:14 AM</td>
+			</tr>
+			<tr>
+				<td>John</td>
+				<td>Hood</td>
+				<td>33</td>
+				<td>$19.99</td>
+				<td>25%</td>
+				<td>Dec 10, 2002 5:14 AM</td>
+			</tr>
+			<tr>
+				<td>Clark</td>
+				<td>Kent</td>
+				<td>18</td>
+				<td>$15.89</td>
+				<td>44%</td>
+				<td>Jan 12, 2003 11:14 AM</td>
+			</tr>
+			<tr>
+				<td>Bruce</td>
+				<td>Almighty</td>
+				<td>45</td>
+				<td>$153.19</td>
+				<td>44%</td>
+				<td>Jan 18, 2001 9:12 AM</td>
+			</tr>
+			<tr>
+				<td>Bruce</td>
+				<td>Evans</td>
+				<td>22</td>
+				<td>$13.19</td>
+				<td>11%</td>
+				<td>Jan 18, 2007 9:12 AM</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<!-- this data-sortlist method requires jQuery v1.4+ -->
+	<table class="table2" data-sortlist="[[0,0],[2,0]]">
+		<thead>
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Age</th>
+				<th>Total</th>
+				<th>Discount</th>
+				<th>Date</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Peter</td>
+				<td>Parker</td>
+				<td>28</td>
+				<td>$9.99</td>
+				<td>20%</td>
+				<td>Jul 6, 2006 8:14 AM</td>
+			</tr>
+			<tr>
+				<td>John</td>
+				<td>Hood</td>
+				<td>33</td>
+				<td>$19.99</td>
+				<td>25%</td>
+				<td>Dec 10, 2002 5:14 AM</td>
+			</tr>
+			<tr>
+				<td>Clark</td>
+				<td>Kent</td>
+				<td>18</td>
+				<td>$15.89</td>
+				<td>44%</td>
+				<td>Jan 12, 2003 11:14 AM</td>
+			</tr>
+			<tr>
+				<td>Bruce</td>
+				<td>Almighty</td>
+				<td>45</td>
+				<td>$153.19</td>
+				<td>44%</td>
+				<td>Jan 18, 2001 9:12 AM</td>
+			</tr>
+			<tr>
+				<td>Bruce</td>
+				<td>Evans</td>
+				<td>22</td>
+				<td>$13.19</td>
+				<td>11%</td>
+				<td>Jan 18, 2007 9:12 AM</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

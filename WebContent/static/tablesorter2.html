@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<!-- choose a theme file -->
+<script language="javascript" src="../script/jquery.js"></script>
+
+<link rel="stylesheet"
+	href="../script/tablesorter/css/theme.default.css">
+<link rel="stylesheet" href="../script/tablesorter/css/theme.blue.css">
+<link rel="stylesheet"
+	href="../script/tablesorter/css/theme.dropbox.css">
+<!-- load jQuery and tablesorter scripts -->
+<script type="text/javascript"
+	src="../script/tablesorter/js/jquery.tablesorter.min.js"></script>
+<!-- tablesorter widgets (optional) -->
+<script type="text/javascript"
+	src="../script/tablesorter/js/jquery.tablesorter.widgets.min.js"></script>
+
+<script type="text/javascript">
+	$(function() {
+
+		// call the tablesorter plugin
+		$("table").tablesorter({
+			theme : 'blue',
+
+			// third click on the header will reset column to default - unsorted
+			sortReset : true,
+			// Resets the sort direction so that clicking on an unsorted column will sort in the sortInitialOrder direction.
+			sortRestart : true,
+
+			sortInitialOrder : 'desc',
+
+			headers : {
+				// 0 : { lockedOrder: 'asc' }, only allow sorting in one direction
+				3 : {
+					sortInitialOrder : 'asc'
+				},
+				4 : {
+					sortInitialOrder : 'asc'
+				},
+				5 : {
+					sortInitialOrder : 'asc'
+				}
+			}
+
+		});
+
+	});
+</script>
+</head>
+<body>
+	<table class="tablesorter">
+		<thead>
+			<tr>
+				<th>First Name (desc)</th>
+				<th>Last Name (desc)</th>
+				<th>Age (desc)</th>
+				<th>Total (asc)</th>
+				<th>Discount (asc)</th>
+				<th>Date (asc)</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Peter</td>
+				<td>Parker</td>
+				<td>28</td>
+				<td>$9.99</td>
+				<td>20%</td>
+				<td>Jul 6, 2006 8:14 AM</td>
+			</tr>
+			<tr>
+				<td>Robin</td>
+				<td>Hood</td>
+				<td>33</td>
+				<td>$19.99</td>
+				<td>25%</td>
+				<td>Dec 10, 2002 5:14 AM</td>
+			</tr>
+			<tr>
+				<td>Clark</td>
+				<td>Kent</td>
+				<td>18</td>
+				<td>$15.89</td>
+				<td>44%</td>
+				<td>Jan 12, 2003 11:14 AM</td>
+			</tr>
+			<tr>
+				<td>Bruce</td>
+				<td>Almighty</td>
+				<td>45</td>
+				<td>$153.19</td>
+				<td>44%</td>
+				<td>Jan 18, 2001 9:12 AM</td>
+			</tr>
+			<tr>
+				<td>Bruce</td>
+				<td>Evans</td>
+				<td>22</td>
+				<td>$13.19</td>
+				<td>11%</td>
+				<td>Jan 18, 2007 9:12 AM</td>
+			</tr>
+		</tbody>
+</body>
+</html>
