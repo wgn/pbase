@@ -1,16 +1,16 @@
-package com.zhuani21.pbase.pdm;
+package com.zhuani21.pbase.process.pdm;
 
 import java.io.File;
 import java.util.List;
 
 import org.dom4j.Node;
 
-import com.zhuani21.pbase.pdm.domain.Table;
-import com.zhuani21.pbase.pdm.util.JavaBeanFileCreator;
-import com.zhuani21.pbase.pdm.util.PDMParser;
-import com.zhuani21.pbase.pdm.util.TableFormatter;
+import com.zhuani21.pbase.process.pdm.domain.Table;
+import com.zhuani21.pbase.process.pdm.util.JavaBeanFileCreator;
+import com.zhuani21.pbase.process.pdm.util.PDMParser;
+import com.zhuani21.pbase.process.pdm.util.TableFormatter;
 
-public class ProjectFileCreator {
+public class PdmProcess {
 
 	public static void main(String[] args) {
 		//1 file

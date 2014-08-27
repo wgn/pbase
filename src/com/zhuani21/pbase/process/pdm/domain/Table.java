@@ -1,4 +1,4 @@
-package com.zhuani21.pbase.pdm.domain;
+package com.zhuani21.pbase.process.pdm.domain;
 
 import java.util.ArrayList;
 import java.util.List;

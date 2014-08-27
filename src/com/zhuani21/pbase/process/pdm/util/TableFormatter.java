@@ -1,12 +1,12 @@
-package com.zhuani21.pbase.pdm.util;
+package com.zhuani21.pbase.process.pdm.util;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.dom4j.Node;
 
-import com.zhuani21.pbase.pdm.domain.Column;
-import com.zhuani21.pbase.pdm.domain.Table;
+import com.zhuani21.pbase.process.pdm.domain.Column;
+import com.zhuani21.pbase.process.pdm.domain.Table;
 
 public class TableFormatter {
 	public static List<Table> transformTables(List<Node> oTables) {

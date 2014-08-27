@@ -1,4 +1,4 @@
-package com.zhuani21.pbase.pdm.util;
+package com.zhuani21.pbase.process.pdm.util;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -6,10 +6,12 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 
-import com.zhuani21.pbase.pdm.domain.Column;
-import com.zhuani21.pbase.pdm.domain.Table;
+import com.zhuani21.pbase.process.pdm.domain.Column;
+import com.zhuani21.pbase.process.pdm.domain.Table;
+import com.zhuani21.pbase.util.Constant;
 
 public class JavaBeanFileCreator {
+
 	public static void create(String path, List<Table> nTables) {
 		for (Table table : nTables) {
 			File javaFile = new File(path + File.separator + table.getName() + ".java");
@@ -23,7 +25,7 @@ public class JavaBeanFileCreator {
 			BufferedWriter bw = null;
 			try {
 				bw = new BufferedWriter(new FileWriter(javaFile));
-				bw.write("public class " + table.getName() + "{\r\n");
+				bw.write("public class " + table.getName() + "{" + Constant.crlf);
 
 				createFields(table, bw);
 				createGetterAndSetter(table, bw);
@@ -59,15 +61,16 @@ public class JavaBeanFileCreator {
 					+ column.getCode().substring(1, column.getCode().length());
 			// setter
 			bw.write("	public void set" + nName + "(" + column.getType() + " " + column.getCode()
-					+ ") {\r\n");
-			bw.write("		this." + column.getCode() + " = " + column.getCode() + " ;\r\n");
-			bw.write("	}\r\n");
-			bw.write("\r\n");
+					+ ") {" + Constant.crlf);
+			bw.write("		this." + column.getCode() + " = " + column.getCode() + ";"
+					+ Constant.crlf);
+			bw.write("	}" + Constant.crlf);
+			bw.write(Constant.crlf);
 			// getter
-			bw.write("	public " + column.getType() + " get" + nName + "() {\r\n");
-			bw.write("		return this." + column.getCode() + " ;\r\n");
-			bw.write("	}\r\n");
-			bw.write("\r\n");
+			bw.write("	public " + column.getType() + " get" + nName + "() {" + Constant.crlf);
+			bw.write("		return this." + column.getCode() + ";" + Constant.crlf);
+			bw.write("	}" + Constant.crlf);
+			bw.write(Constant.crlf);
 		}
 	}
 
@@ -78,9 +81,10 @@ public class JavaBeanFileCreator {
 	 */
 	private static void createFields(Table table, BufferedWriter bw) throws IOException {
 		for (Column column : table.getColumns()) {
-			bw.write("	private " + column.getType() + " " + column.getCode() + " ; \r\n");
+			bw.write("	private " + column.getType() + " " + column.getCode() + ";"
+					+ Constant.crlf);
 		}
-		bw.write("\r\n");
+		bw.write(Constant.crlf);
 	}
 
 }
