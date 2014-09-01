@@ -1,4 +1,4 @@
-package com.zhuani21.pbase.install;
+package com.zhuani21.pbase.process.install;
 
 import javax.annotation.Resource;
 
@@ -22,7 +22,7 @@ import com.zhuani21.pbase.domain.User;
  * 
  */
 @Component
-public class Installer {
+public class InstallProcess {
 
 	@Resource
 	private SessionFactory sessionFactory;
@@ -100,7 +100,7 @@ public class Installer {
 
 		// 一定要从Spring容器中取出对象
 		ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
-		Installer installer = (Installer) ac.getBean("installer");
+		InstallProcess installer = (InstallProcess) ac.getBean("installer");
 		// 执行安装
 		installer.install();
 
